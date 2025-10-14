@@ -1,0 +1,79 @@
+{
+  "folder": null,
+  "name": "Effect: Siphon Poison",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.946,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You increase the acid damage die zie for mandibles and acid spit Strikes, and Sickening Death, by one step (typically to d6s).</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Starfinder Alien Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "DamageAlteration",
+        "mode": "upgrade",
+        "predicate": [
+          "dice:damage:type:acid"
+        ],
+        "property": "dice-faces",
+        "selectors": [
+          "strike-damage",
+          "sickening-death-inline-damage"
+        ],
+        "value": 6
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "img": "icons/magic/acid/projectile-faceted-glob.webp",
+  "ownership": {
+    "default": 0,
+    "uALuXwktnyPWpcY7": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "pf2e",
+    "systemVersion": "7.5.2"
+  },
+  "_id": "bx5WXjFyU9nu4UyE",
+  "sort": 0,
+  "_key": "!items!bx5WXjFyU9nu4UyE"
+}
