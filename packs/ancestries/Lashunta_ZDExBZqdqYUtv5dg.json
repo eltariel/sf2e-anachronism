@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": ""
+      "value": "<p><em>Long ago, lashuntas evolved psychic abilities and a unique dimorphism that helped them survive on their home world of Castrovel. In modern times, lashuntas manipulate their own genetics at puberty, allowing each individual to develop into an enhanced scholar or warrior, though not every lashunta commits to these traditional choices.</em></p>"
     },
     "rules": [],
     "slug": "lashunta",
@@ -30,6 +30,7 @@
     },
     "hp": 6,
     "size": "med",
+    "hands": 2,
     "reach": 5,
     "speed": 25,
     "boosts": {
@@ -39,13 +40,7 @@
         ]
       },
       "1": {
-        "value": [
-          "con",
-          "dex",
-          "int",
-          "str",
-          "wis"
-        ]
+        "value": []
       },
       "2": {
         "value": [

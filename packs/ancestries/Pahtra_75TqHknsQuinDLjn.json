@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": ""
+      "value": "<p><em>Pahtras are a humanoid feline species from a nearby star system. They're highly competitive and known for their achievements in magic, music, and war. Their home world was recently freed from the Veskarium's occupation, and they've joined the Pact Worlds.</em></p>"
     },
     "rules": [],
     "slug": "pahtra",
@@ -30,6 +30,7 @@
     },
     "hp": 8,
     "size": "med",
+    "hands": 2,
     "reach": 5,
     "speed": 25,
     "boosts": {

@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": ""
+      "value": "<p><em>Vesk are a warmongering, reptilian people who conquered the eight worlds in their solar system shortly after they developed spaceflight, forming the Veskarium empire. Vesk tend to embrace conflict and respect strength and military might.</em></p>"
     },
     "rules": [],
     "slug": "vesk",
@@ -30,6 +30,7 @@
     },
     "hp": 10,
     "size": "med",
+    "hands": 2,
     "reach": 5,
     "speed": 20,
     "boosts": {
