@@ -339,7 +339,16 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 30,
+            "traits": [
+              "occult",
+              "void"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -404,7 +413,7 @@
             "key": "RollOption",
             "option": "torn-from-the-drift",
             "toggleable": true,
-            "value": true
+            "value": false
           },
           {
             "key": "ActorTraits",

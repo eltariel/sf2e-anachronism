@@ -49,8 +49,15 @@
         {
           "type": "all-damage",
           "value": 5,
-          "exceptions": [],
-          "doubleVs": []
+          "exceptions": [
+            "force",
+            "ghost-touch",
+            "spirit",
+            "vitality"
+          ],
+          "doubleVs": [
+            "non-magical"
+          ]
         }
       ]
     },

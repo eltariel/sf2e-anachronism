@@ -388,7 +388,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>An orocoran's stomach fluids are laced with hallucinogens due to their consumption of the ichor-like birthing fluids expelled by Aucturn during the hatching of the Newborn.</p><p>A creature hit with the projectile vomit must succeed at a @Check[will|dc:24] save or be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round (1d4 rounds on a critical failure).</p>",
+          "value": "<p>An orocoran's stomach fluids are laced with hallucinogens due to their consumption of the ichor-like birthing fluids expelled by Aucturn during the hatching of the Newborn.</p><p>A creature hit with the projectile vomit must succeed at a @Check[will|dc:24] save or be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round ([[/r 1d4]] rounds on a critical failure).</p>",
           "gm": ""
         },
         "publication": {
@@ -421,7 +421,7 @@
       },
       "effects": [],
       "_id": "vHhA6oEM5PjxO0UY",
-      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
       "folder": null,
       "sort": 0,
       "flags": {},

@@ -49,7 +49,7 @@
           "aklo",
           "common"
         ],
-        "details": "Can't speak any language"
+        "details": "can't speak any language"
       },
       "level": {
         "value": 1
@@ -389,7 +389,24 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "fungal-symbiosis",
+            "toggleable": true,
+            "domain": "strike-damage",
+            "value": false
+          },
+          {
+            "key": "DamageDice",
+            "diceNumber": 1,
+            "dieSize": "d4",
+            "selector": "strike-damage",
+            "predicate": [
+              "fungal-symbiosis"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -436,7 +453,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The corzad dissolves into a mass of slimy spores and Strides twice, ignoring difficult terrain and other creatures. This movement doesn't trigger reactions. Any creature in the corzad's path must succeed at a @Check[will|dc:15] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. The corzad re-forms at the end of this movement.</p>",
+          "value": "<p>The corzad dissolves into a mass of slimy spores and Strides twice, ignoring difficult terrain and other creatures. This movement doesn't trigger reactions. Any creature in the corzad's path must succeed at a @Check[will|dc:15|options:area-effect,inflicts:sickened] save or become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. The corzad re-forms at the end of this movement.</p>",
           "gm": ""
         },
         "publication": {

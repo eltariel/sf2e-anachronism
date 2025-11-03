@@ -322,7 +322,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>10 feet. At the beginning of their turn, while the biotech giant is in contact with the ground, they can extend fungal tendrils from their body, starting as a 10-foot aura and increasing or decreasing by an additional 5 feet per turn as the giant wishes at the start of their turn. Any creature entering or starting its turn in the aura takes @Damage[5d8[electricity]] damage (@Check[fortitude|dc:28|basic] save). When the giant Steps or Strides, they end their current aura and leave behind fungal ground cover in those spaces, starting a new aura at the beginning of their next turn.</p>",
+          "value": "<p>10 feet. At the beginning of their turn, while the biotech giant is in contact with the ground, they can extend fungal tendrils from their body, starting as a 10-foot aura and increasing or decreasing by an additional 5 feet per turn as the giant wishes at the start of their turn. Any creature entering or starting its turn in the aura takes @Damage[5d8[electricity]|options:area-damage] damage (@Check[fortitude|dc:28|basic|options:area-effect] save). When the giant Steps or Strides, they end their current aura and leave behind fungal ground cover in those spaces, starting a new aura at the beginning of their next turn.</p>",
           "gm": ""
         },
         "publication": {
@@ -387,7 +387,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>Any creature that starts its turn in an area of fungal ground cover must succeed at a @Check[reflex|dc:26] save or take @Damage[3d8[electricity]] damage. This area is also difficult terrain for creatures other than biotech giants and fungus. Any amount of fire damage automatically destroys a square of fungal ground cover.</p>",
+          "value": "<p>Any creature that starts its turn in an area of fungal ground cover must succeed at a @Check[reflex|dc:26|options:area-effect,damaging-effect] save or take @Damage[3d8[electricity]|options:area-damage] damage. This area is also difficult terrain for creatures other than biotech giants and fungus. Any amount of fire damage automatically destroys a square of fungal ground cover.</p>",
           "gm": ""
         },
         "publication": {

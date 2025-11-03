@@ -604,7 +604,9 @@
           "value": [
             "analog",
             "concussive",
+            "expend-1",
             "kickback",
+            "mag-3",
             "range-increment-15",
             "ranged-shove",
             "razing",
@@ -1151,7 +1153,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>A special payload gives the breaching gun the area (@Template[type:cone|distance:15]) and unwieldy traits until the end of the gunner's turn. The gunner makes an attack using Area Fire (@Check[reflex|dc:19|basic] save) that uses 3 projectiles. Enemies in the affected area who fail their save against the attack become suppressed until the start of the gunner's next turn.</p>",
+          "value": "<p>A special payload gives the breaching gun the area (@Template[type:cone|distance:15]) and unwieldy traits until the end of the gunner's turn. The gunner makes an attack using Area Fire (@Check[reflex|dc:19|basic] save) that uses 3 projectiles. Enemies in the affected area who fail their save against the attack become @UUID[Compendium.sf2e-anachronism.conditions.Item.enA7BxAjBb7ns1iF]{suppressed} until the start of the gunner's next turn.</p>",
           "gm": ""
         },
         "publication": {

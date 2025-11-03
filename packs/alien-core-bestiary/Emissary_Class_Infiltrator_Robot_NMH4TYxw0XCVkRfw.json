@@ -899,6 +899,8 @@
         "traits": {
           "value": [
             "analog",
+            "expend-1",
+            "mag-10",
             "range-increment-60",
             "reload-1"
           ],

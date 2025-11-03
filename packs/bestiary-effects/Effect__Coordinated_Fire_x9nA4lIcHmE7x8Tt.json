@@ -12,18 +12,43 @@
       "gm": ""
     },
     "publication": {
-      "title": "Starfinder Guilt of the Grave World",
+      "title": "Starfinder Alien Core",
       "authors": "",
       "license": "ORC",
       "remaster": true
     },
     "rules": [
       {
+        "key": "TokenMark",
+        "slug": "coordinateed-fire",
+        "uuid": ""
+      },
+      {
         "key": "FlatModifier",
-        "selector": "attack",
+        "selector": [
+          "attack"
+        ],
         "value": 2,
         "type": "circumstance",
-        "removeAfterRoll": true
+        "removeAfterRoll": "if-enabled",
+        "predicate": [
+          "target:mark:coordinated-fire"
+        ]
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "target:mark:coordinated-fire"
+        ],
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "selector": [
+          "attack"
+        ],
+        "title": "{item|name}",
+        "text": "SF2E.NPCAbility.AeonGuard.Trooper.CoordinatedFire.Note"
       }
     ],
     "slug": null,
@@ -32,7 +57,7 @@
       "value": []
     },
     "level": {
-      "value": 1
+      "value": 3
     },
     "duration": {
       "value": 1,
@@ -63,11 +88,11 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.348",
+    "coreVersion": "13.350",
     "systemId": "pf2e",
-    "systemVersion": "7.5.1"
+    "systemVersion": "7.6.2"
   },
   "_id": "x9nA4lIcHmE7x8Tt",
-  "sort": 0,
+  "sort": 2200000,
   "_key": "!items!x9nA4lIcHmE7x8Tt"
 }

@@ -15,7 +15,7 @@
         "details": ""
       },
       "allSaves": {
-        "value": ""
+        "value": "+1 status bonus to all saves vs. magic"
       },
       "speed": {
         "value": 30,
@@ -341,7 +341,7 @@
         },
         "category": "defensive",
         "description": {
-          "value": "<p>90 feet @Check[will|dc:25]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>",
+          "value": "<p>90 feet @Check[will|dc:25|options:inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>",
           "gm": ""
         },
         "publication": {
@@ -1339,7 +1339,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The dragon breathes a blast of caustic superheated gas that deals @Damage[5d6[fire],3d12[persistent,poison]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[fortitude|dc:28|basic] save). They can't use Radiation Breath again for [[/gmr 1d4 #Recharge Radiation Breath]]{1d4 rounds}.</p>",
+          "value": "<p>The dragon breathes a blast of caustic superheated gas that deals @Damage[5d6[fire],3d12[persistent,poison]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[fortitude|dc:28|basic|options:area-effect] save). They can't use Radiation Breath again for [[/gmr 1d4 #Recharge Radiation Breath]]{1d4 rounds}.</p>",
           "gm": ""
         },
         "publication": {
@@ -1435,7 +1435,7 @@
           "flexible": false
         },
         "showSlotlessLevels": {
-          "value": true
+          "value": false
         },
         "proficiency": {
           "value": 1
@@ -1644,7 +1644,7 @@
           "value": "spontaneous"
         },
         "showSlotlessLevels": {
-          "value": true
+          "value": false
         },
         "proficiency": {
           "value": 1

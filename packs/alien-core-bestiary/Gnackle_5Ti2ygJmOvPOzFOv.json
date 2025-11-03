@@ -691,7 +691,7 @@
     },
     {
       "type": "spell",
-      "name": "Glow Up",
+      "name": "Glow Up (at will)",
       "folder": "PUfxgisPd7TTDluV",
       "system": {
         "description": {
@@ -1130,7 +1130,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>A gnackle can imbue a willing creature with a magical gift of talent for 24 hours, imparting a +2 status bonus to checks with a specific skill, chosen when this ability is used. The gnackle always knows when the creature attempts checks with the chosen skill and, at any time, can choose to invert the gift to instead immediately impart a –4 status penalty to all checks attempted with that skill for 1 minute, after which the creature is no longer affected by this ability.</p>",
+          "value": "<p>A gnackle can imbue a willing creature with a magical gift of talent for 24 hours, imparting a +2 status bonus to checks with a specific skill, chosen when this ability is used. The gnackle always knows when the creature attempts checks with the chosen skill and, at any time, can choose to invert the gift to instead immediately impart a –4 status penalty to all checks attempted with that skill for 1 minute, after which the creature is no longer affected by this ability.</p><p>@UUID[Compendium.sf2e-anachronism.bestiary-effects.Item.1uk1rvqSP0S2HfVG]</p><p>@UUID[Compendium.sf2e-anachronism.bestiary-effects.Item.LdbqPPiSg5gn5Kqp]</p>",
           "gm": ""
         },
         "publication": {

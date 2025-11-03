@@ -599,7 +599,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "",
+          "value": "<p>A scavenger slime builds a shell for itself from discarded pieces of technology and a secretion of natural resin. This grants the ooze Hardness. This Hardness reduces any damage it takes by an amount equal to its Hardness but temporarily removes its immunity to critical hits. Once the scavenger slime is reduced to half its Hit Points or immediately after being damaged by a critical hit, the scavenger shell breaks, removing its Hardness and reducing its Armor Class to 22.</p>",
           "gm": ""
         },
         "publication": {

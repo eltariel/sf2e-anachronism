@@ -1364,7 +1364,7 @@
             "selectors": [
               "ranged-strike-attack-roll"
             ],
-            "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.jF2YVTcYorlUIetc"
+            "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.mprZBMDC5a4U2STA"
           }
         ],
         "slug": null,
@@ -1396,9 +1396,9 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null,
-        "coreVersion": "13.348",
+        "coreVersion": "13.350",
         "systemId": "pf2e",
-        "systemVersion": "7.5.1"
+        "systemVersion": "7.6.2"
       },
       "ownership": {
         "default": 0

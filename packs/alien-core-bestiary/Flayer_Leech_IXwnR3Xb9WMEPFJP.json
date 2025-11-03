@@ -22,13 +22,7 @@
         "otherSpeeds": [],
         "details": ""
       },
-      "weaknesses": [
-        {
-          "type": "bludgeoning",
-          "value": 5,
-          "exceptions": []
-        }
-      ]
+      "weaknesses": []
     },
     "initiative": {
       "statistic": "perception"
@@ -278,7 +272,7 @@
     },
     {
       "img": "systems/pf2e/icons/actions/Passive.webp",
-      "name": "Regeneration",
+      "name": "Regeneration 5 (deactivated by acid or sonic)",
       "system": {
         "actionType": {
           "value": "passive"
@@ -536,7 +530,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>A flayer leech consumes the brain of the corpse of a Medium or Small creature dead for no longer than an hour, taking over its body. It also stitches together any wounds the corpse might have, presenting only barely visible lines. It can use Stealth to Impersonate and doesn't need a disguise kit to do so, but it takes a –2 circumstance penalty to the check if any creature engages the flayer leech in conversation for 1 minute. When in this effigy form, it loses its weakness to bludgeoning and gains weakness 5 to sonic damage. It can make proboscis melee Strikes through extension in its wrists, but it can't make subsonic blast ranged Strikes. A flayer leech can Dismiss the effigy.</p>",
+          "value": "<p>A flayer leech consumes the brain of the corpse of a Medium or Small creature dead for no longer than an hour, taking over its body. It also stitches together any wounds the corpse might have, presenting only barely visible lines. It can use Stealth to [[/act impersonate skill=stealth]] and doesn't need a disguise kit to do so, but it takes a –2 circumstance penalty to the check if any creature engages the flayer leech in conversation for 1 minute. When in this effigy form, it loses its weakness to bludgeoning and gains weakness 5 to sonic damage. It can make proboscis melee Strikes through extension in its wrists, but it can't make subsonic blast ranged Strikes. A flayer leech can Dismiss the effigy.</p>",
           "gm": ""
         },
         "publication": {
@@ -545,7 +539,31 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "create-effigy",
+            "toggleable": true
+          },
+          {
+            "key": "Weakness",
+            "predicate": [
+              "create-effigy"
+            ],
+            "type": "sonic",
+            "value": 5
+          },
+          {
+            "key": "Weakness",
+            "predicate": [
+              {
+                "not": "create-effigy"
+              }
+            ],
+            "type": "bludgeoning",
+            "value": 5
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

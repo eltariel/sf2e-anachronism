@@ -57,7 +57,7 @@
         "value": [
           "empyrean"
         ],
-        "details": "Truespeech"
+        "details": "truespeech"
       },
       "level": {
         "value": 7
@@ -795,15 +795,17 @@
             "value": "magical"
           },
           {
-            "key": "AdjustStrike",
+            "key": "ItemAlteration",
+            "itemType": "melee",
             "mode": "add",
-            "property": "weapon-traits",
+            "property": "traits",
             "value": "holy"
           },
           {
-            "key": "AdjustStrike",
+            "key": "ItemAlteration",
+            "itemType": "melee",
             "mode": "add",
-            "property": "weapon-traits",
+            "property": "traits",
             "value": "magical"
           }
         ],
@@ -862,7 +864,20 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "effects": [
+              {
+                "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.liRaJmKk1vWWuJ8W"
+              }
+            ],
+            "radius": 20,
+            "traits": [
+              "divine"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -2121,7 +2136,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The barachius makes a digital dagger Strike against an adjacent creature or item that has the tech trait.</p><p>On a hit, the target must attempt a @Check[will|dc:25] saving throw as the angel's holy influence attempts to seize control over it. A target with the holy trait use the outcome one degree of success better than the result of its roll, while one with the unholy trait uses the outcome one degree of success worse than the result of its roll.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target's vision is filled with holy sigils and code, giving it the @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} condition until the end of its next turn.</p><p><strong>Failure</strong> As success, and the target is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p><p><strong>Critical Failure</strong> The target's core processes are seized by the angel, giving the target the controlled condition for 1 minute. While the target is controlled by the barachius, the angel can also use any of their spells as if it originated from the target rather than the angel. The target can attempt a new saving throw at the end of each of its turns to end the controlled condition.</p>",
+          "value": "<p>The barachius makes a digital dagger Strike against an adjacent creature or item that has the tech trait.</p><p>On a hit, the target must attempt a @Check[will|dc:25|options:inflicts:controlled,inflicts:dazzled,inflicts:stunned] saving throw as the angel's holy influence attempts to seize control over it. A target with the holy trait use the outcome one degree of success better than the result of its roll, while one with the unholy trait uses the outcome one degree of success worse than the result of its roll.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target's vision is filled with holy sigils and code, giving it the @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} condition until the end of its next turn.</p><p><strong>Failure</strong> As success, and the target is also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p><p><strong>Critical Failure</strong> The target's core processes are seized by the angel, giving the target the @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled} condition for 1 minute. While the target is controlled by the barachius, the angel can also use any of their spells as if it originated from the target rather than the angel. The target can attempt a new saving throw at the end of each of its turns to end the controlled condition.</p>",
           "gm": ""
         },
         "publication": {

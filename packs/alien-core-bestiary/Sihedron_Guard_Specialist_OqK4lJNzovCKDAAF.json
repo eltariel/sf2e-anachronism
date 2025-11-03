@@ -873,6 +873,8 @@
         "traits": {
           "value": [
             "caster",
+            "expend-1",
+            "mag-20",
             "range-increment-60",
             "reload-1",
             "tracking-1"

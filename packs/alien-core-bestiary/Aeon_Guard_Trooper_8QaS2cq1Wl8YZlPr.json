@@ -1165,7 +1165,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>After the trooper attempts a Strike against a target (regardless of success or failure), the next attack roll one of the trooper's allies makes against the same target gains a +2 circumstance bonus. If a Strike with a bonus from coordinated fire hits, the target becomes @UUID[Compendium.sf2e-anachronism.conditions.Item.enA7BxAjBb7ns1iF]{suppressed} until the end of the attacking ally's next turn.</p>",
+          "value": "<p>After the trooper attempts a Strike against a target (regardless of success or failure), the next attack roll one of the trooper's allies makes against the same target gains a +2 circumstance bonus. If a Strike with a bonus from coordinated fire hits, the target becomes @UUID[Compendium.sf2e-anachronism.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of the attacking ally's next turn.</p><p>@UUID[Compendium.sf2e-anachronism.bestiary-effects.x9nA4lIcHmE7x8Tt]{Effect: Coordinated Fire}</p>",
           "gm": ""
         },
         "publication": {
@@ -1283,7 +1283,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>The trooper gains a +2 circumstance bonus to damage rolls against @UUID[Compendium.sf2e-anachronism.conditions.Item.enA7BxAjBb7ns1iF]{suppressed} targets.</p>",
+          "value": "<p>The trooper gains a +2 circumstance bonus to damage rolls against @UUID[Compendium.sf2e-anachronism.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} targets.</p>",
           "gm": ""
         },
         "publication": {
@@ -1299,7 +1299,7 @@
             "value": 2,
             "type": "circumstance",
             "predicate": [
-              "target:effect:suppressed"
+              "target:condition:suppressed"
             ]
           }
         ],

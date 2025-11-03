@@ -9,7 +9,7 @@
       "previous": null
     },
     "description": {
-      "value": "<p>You increase the acid damage die zie for mandibles and acid spit Strikes, and Sickening Death, by one step (typically to d6s).</p>",
+      "value": "<p>The acid damage die size for your mandibles and acid spit Strikes and Sickening Death ability increase by one step.</p>",
       "gm": ""
     },
     "publication": {
@@ -71,9 +71,9 @@
     "exportSource": null,
     "coreVersion": "13.350",
     "systemId": "pf2e",
-    "systemVersion": "7.5.2"
+    "systemVersion": "7.6.2"
   },
   "_id": "bx5WXjFyU9nu4UyE",
-  "sort": 0,
+  "sort": 1600000,
   "_key": "!items!bx5WXjFyU9nu4UyE"
 }

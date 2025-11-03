@@ -317,7 +317,12 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 60
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

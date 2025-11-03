@@ -407,6 +407,8 @@
         },
         "traits": {
           "value": [
+            "expend-2",
+            "mag-10",
             "range-increment-40",
             "reload-1",
             "tech"

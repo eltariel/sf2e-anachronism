@@ -366,7 +366,19 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 30,
+            "effects": [
+              {
+                "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.ck4ogo5HX97e5UuM",
+                "affects": "allies",
+                "includesSelf": false
+              }
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

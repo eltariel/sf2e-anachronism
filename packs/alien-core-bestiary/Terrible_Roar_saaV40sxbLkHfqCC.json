@@ -234,7 +234,7 @@
   "flags": {
     "pf2e": {
       "editHazard": {
-        "value": true
+        "value": false
       }
     }
   },

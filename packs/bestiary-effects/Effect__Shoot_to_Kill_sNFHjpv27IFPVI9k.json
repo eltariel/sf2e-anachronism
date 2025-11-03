@@ -62,11 +62,11 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.348",
+    "coreVersion": "13.350",
     "systemId": "pf2e",
     "systemVersion": "7.5.1"
   },
   "_id": "sNFHjpv27IFPVI9k",
-  "sort": 0,
+  "sort": 2100000,
   "_key": "!items!sNFHjpv27IFPVI9k"
 }

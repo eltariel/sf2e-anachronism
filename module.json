@@ -143,6 +143,19 @@
             "flags": {}
         },
         {
+            "name": "creature-ability-glossary",
+            "label": "Creature Ability Glossary",
+            "path": "packs/creature-ability-glossary",
+            "type": "Item",
+            "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "LIMITED",
+                "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        },
+        {
             "name": "deities",
             "label": "Deities",
             "path": "packs/deities",
@@ -337,6 +350,7 @@
                     "color": "#9DD9E5",
                     "packs": [
                         "alien-core-bestiary",
+                        "creature-ability-glossary",
                         "guilt-of-the-grave-world-bestiary",
                         "standalone-adventure-bestiary",
                         "starfinder-society-bestiary",

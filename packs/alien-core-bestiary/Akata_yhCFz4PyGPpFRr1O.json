@@ -148,7 +148,27 @@
           "title": "",
           "authors": ""
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "AdjustDegreeOfSuccess",
+            "selector": "perception",
+            "adjustment": "to-critical-failure",
+            "predicate": [
+              "item:trait:auditory"
+            ]
+          },
+          {
+            "key": "FlatModifier",
+            "value": -2,
+            "type": "status",
+            "selector": [
+              "perception"
+            ],
+            "predicate": [
+              "no-hearing"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "value": [
@@ -310,7 +330,7 @@
         },
         "category": "offensive",
         "description": {
-          "value": "<p>An akata implants microscopic larvae into any creature it bites, but only Small or Medium humanoids make suitable hosts; all other creatures are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} at</p><p><strong>Stage 2</strong> and further instead</p><p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p><p><strong>Stage 1</strong> carrier with no ill effect 1 (1 day)</p><p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p><p><strong>Stage 3</strong> as stage 2 (1 day)</p><p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p><p><strong>Stage 5</strong> as stage 4 (1 day)</p><p><strong>Stage 6</strong> dead and corpse rises as a void zombie in [[/gmr 2d4 #hours]]{2d4 hours}</p>",
+          "value": "<p>An akata implants microscopic larvae into any creature it bites, but only Small or Medium humanoids make suitable hosts; all other creatures are @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} at Stage 2 and further instead.</p><hr /><p><strong>Saving Throw</strong> @Check[fortitude|dc:17]</p><p><strong>Stage 1</strong> carrier with no ill effect 1 (1 day)</p><p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p><p><strong>Stage 3</strong> as stage 2 (1 day)</p><p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p><p><strong>Stage 5</strong> as stage 4 (1 day)</p><p><strong>Stage 6</strong> dead and corpse rises as a void zombie in [[/gmr 2d4 #hours]]{2d4 hours}</p>",
           "gm": ""
         },
         "publication": {
@@ -463,7 +483,7 @@
       }
     },
     "perception": {
-      "details": " no hearing",
+      "details": "no hearing",
       "mod": 6,
       "senses": [
         {

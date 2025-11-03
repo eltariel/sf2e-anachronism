@@ -942,15 +942,12 @@
             "damage": "1d6",
             "damageType": "fire",
             "category": null
-          },
-          "t1mDbuMu40bH7SQG": {
-            "damage": "1d6",
-            "damageType": "void",
-            "category": null
           }
         },
         "traits": {
           "value": [
+            "expend-2",
+            "mag-10",
             "range-increment-40",
             "reload-1",
             "tech"
@@ -1017,11 +1014,6 @@
           "bEUQu86tiGvCRu30": {
             "damage": "1d6+4",
             "damageType": "slashing",
-            "category": null
-          },
-          "8TyCa8MRaq9QPbbX": {
-            "damage": "1d6",
-            "damageType": "void",
             "category": null
           }
         },
@@ -1205,7 +1197,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>20 feet. Undead that begin their turn in the aura (including the Corpse Fleet officer) gain 8 temporary Hit Points for 1 hour, then become temporarily immune to bolstering aura for 1 hour.</p>",
+          "value": "<p>20 feet. Undead that begin their turn in the aura (including the Corpse Fleet officer) gain 8 temporary Hit Points for 1 hour, then become temporarily immune to bolstering aura for 1 hour.</p><p>@UUID[Compendium.sf2e-anachronism.bestiary-effects.Item.ZWOPndNX0EIhYCG9]{Effect: Bolstering Aura}</p>",
           "gm": ""
         },
         "publication": {
@@ -1270,7 +1262,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>20 feet. Undead that begin their turn in the aura (including the Corpse Fleet officer) gain 8 temporary Hit Points for 1 hour, then become temporarily immune to bolstering aura for 1 hour.</p>",
+          "value": "<p>The Corpse Fleet officer has trained to decimate the living. Their Strikes deal an additional 1d6 void damage.</p>",
           "gm": ""
         },
         "publication": {
@@ -1279,7 +1271,15 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "DamageDice",
+            "dieSize": "d6",
+            "diceNumber": 1,
+            "selector": "strike-damage",
+            "damageType": "void"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -1335,7 +1335,42 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "lead-salvo",
+            "toggleable": true,
+            "suboptions": [
+              {
+                "label": "PF2E.SpecificRule.Numbers.One",
+                "value": "1"
+              },
+              {
+                "label": "PF2E.SpecificRule.Numbers.Two",
+                "value": "2"
+              },
+              {
+                "label": "PF2E.SpecificRule.Numbers.Three",
+                "value": "3"
+              },
+              {
+                "label": "PF2E.SpecificRule.Numbers.Four",
+                "value": "4"
+              }
+            ],
+            "label": "SF2E.NPCAbility.CorpseFleet.LeadSalvo.RollOptionLabel"
+          },
+          {
+            "key": "DamageDice",
+            "diceNumber": "@item.flags.pf2e.rulesSelections.leadSalvo",
+            "dieSize": "d4",
+            "damageType": "void",
+            "predicate": [
+              "lead-salvo"
+            ],
+            "selector": "strike-damage"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

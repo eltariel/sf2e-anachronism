@@ -276,7 +276,16 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 30,
+            "traits": [
+              "metal",
+              "primal"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -323,7 +332,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>A ferrofluid ooze that takes fire damage has its magnetic field deactivated until the end of the ooze's next turn. It releases itself from any creature it was attached to, drops any held items, and can't use Magnetic [[/act leap]] or Attach until its magnetic field returns.</p>",
+          "value": "<p>A ferrofluid ooze that takes fire damage has its magnetic field deactivated until the end of the ooze's next turn. It releases itself from any creature it was attached to, drops any held items, and can't use Magnetic Leap or Attach until its magnetic field returns.</p>",
           "gm": ""
         },
         "publication": {

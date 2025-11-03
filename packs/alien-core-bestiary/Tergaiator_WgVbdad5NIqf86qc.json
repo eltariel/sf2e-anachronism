@@ -491,61 +491,6 @@
       "_key": "!actors.items!WgVbdad5NIqf86qc.AA81fLswwRKqqg9c"
     },
     {
-      "img": "systems/pf2e/icons/actions/FreeAction.webp",
-      "name": "Improved Grab",
-      "system": {
-        "actionType": {
-          "value": "free"
-        },
-        "actions": {
-          "value": null
-        },
-        "category": "offensive",
-        "description": {
-          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>",
-          "gm": ""
-        },
-        "publication": {
-          "license": "ORC",
-          "remaster": true,
-          "title": "Pathfinder Monster Core",
-          "authors": ""
-        },
-        "rules": [],
-        "traits": {
-          "value": [],
-          "otherTags": []
-        },
-        "slug": "improved-grab",
-        "_migration": {
-          "version": 0.946,
-          "previous": {
-            "schema": 0.943,
-            "foundry": "13.350",
-            "system": "7.5.2"
-          }
-        }
-      },
-      "type": "action",
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.350",
-        "systemId": "pf2e",
-        "systemVersion": "7.6.2"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "flags": {},
-      "_id": "5MPSigilXL6VSmCa",
-      "ownership": {
-        "default": 0
-      },
-      "_key": "!actors.items!WgVbdad5NIqf86qc.5MPSigilXL6VSmCa"
-    },
-    {
       "type": "melee",
       "name": "Meteor Fragment",
       "effects": [],

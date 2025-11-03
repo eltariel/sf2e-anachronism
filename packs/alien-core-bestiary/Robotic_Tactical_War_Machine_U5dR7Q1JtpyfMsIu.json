@@ -293,7 +293,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>60 feet. Non-allied comm units and other computers don't function within the remote war machine's aura unless their operator succeeds at a Computers check against the war machine's Stealth DC as an Interact action.</p>",
+          "value": "<p>60 feet. Non-allied comm units and other computers don't function within the remote war machine's aura unless their operator succeeds at a @Check[computers|against:stealth|rollerRole:target] check against the war machine's Stealth DC as an Interact action.</p>",
           "gm": ""
         },
         "publication": {

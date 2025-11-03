@@ -524,9 +524,7 @@
           "value": 37
         },
         "attackEffects": {
-          "value": [
-            "amputating-strikes"
-          ]
+          "value": []
         },
         "action": "strike",
         "area": null
@@ -566,7 +564,20 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Note",
+            "selector": [
+              "strike-attack-roll"
+            ],
+            "outcome": [
+              "criticalSuccess"
+            ],
+            "title": "{item|name}",
+            "visibility": "owner",
+            "text": "{item|description}"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -648,9 +659,7 @@
           "value": 40
         },
         "attackEffects": {
-          "value": [
-            "amputating-strikes"
-          ]
+          "value": []
         },
         "action": "strike",
         "area": null
@@ -1615,7 +1624,7 @@
           "value": "free"
         },
         "description": {
-          "value": "<p><strong>Frequency</strong> once per <span class=\"pf2-icon\">F</span> round; oscriss</p><hr /><p><strong>Effect</strong> The designates a creature within 100 feet to be the secondary target of their attacks until the end of the oscriss's next turn.</p><p>Whenever the oscriss makes a Strike against a different creature, they can make the same Strike against their secondary target as a free action, using the same multiple attack penalty as the attack against the initial target. The initial and secondary Strikes count as one attack for the purposes of increasing the oscriss's multiple attack penalty.</p>",
+          "value": "<p><strong>Frequency</strong> once per round;</p><hr /><p><strong>Effect</strong> The designates a creature within 100 feet to be the secondary target of their attacks until the end of the oscriss's next turn.</p><p>Whenever the oscriss makes a Strike against a different creature, they can make the same Strike against their secondary target as a free action, using the same multiple attack penalty as the attack against the initial target. The initial and secondary Strikes count as one attack for the purposes of increasing the oscriss's multiple attack penalty.</p>",
           "gm": ""
         },
         "publication": {

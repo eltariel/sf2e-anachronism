@@ -325,8 +325,7 @@
               "cold",
               "primal"
             ],
-            "effects": [],
-            "radius": 10
+            "radius": 20
           }
         ],
         "slug": null,

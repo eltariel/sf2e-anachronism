@@ -458,7 +458,32 @@
             "traits": [
               "divine"
             ],
-            "effects": []
+            "predicate": [
+              "cosmic-attunement:photon"
+            ],
+            "effects": [
+              {
+                "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.uVKf8emUoSGeRZQt",
+                "affects": "allies",
+                "includesSelf": false
+              }
+            ]
+          },
+          {
+            "key": "Aura",
+            "radius": 60,
+            "traits": [
+              "divine"
+            ],
+            "predicate": [
+              "cosmic-attunement:graviton"
+            ],
+            "effects": [
+              {
+                "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.e2z2ZdHOdc3BrVf8",
+                "affects": "enemies"
+              }
+            ]
           }
         ],
         "slug": null,
@@ -1180,7 +1205,80 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "alwaysActive": true,
+            "key": "RollOption",
+            "option": "cosmic-attunement",
+            "suboptions": [
+              {
+                "label": "SF2E.SpecificRule.Solarian.StellarAttunement.Graviton",
+                "value": "graviton"
+              },
+              {
+                "label": "SF2E.SpecificRule.Solarian.StellarAttunement.Photon",
+                "value": "photon"
+              }
+            ],
+            "toggleable": true
+          },
+          {
+            "diceNumber": 2,
+            "dieSize": "d6",
+            "damageType": "fire",
+            "key": "DamageDice",
+            "predicate": [
+              "cosmic-attunement:photon"
+            ],
+            "selector": "strike-damage"
+          },
+          {
+            "diceNumber": 1,
+            "dieSize": "d6",
+            "damageType": "bludgeoning",
+            "key": "DamageDice",
+            "predicate": [
+              "cosmic-attunement:graviton"
+            ],
+            "selector": "strike-damage"
+          },
+          {
+            "key": "Note",
+            "predicate": [
+              "cosmic-attunement:graviton"
+            ],
+            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]",
+            "title": "@Localize[PF2E.AttackEffectKnockdown]  <span class=\"action-glyph\">1</span>",
+            "visibility": "owner",
+            "selector": [
+              "strike-damage"
+            ]
+          },
+          {
+            "key": "DamageAlteration",
+            "mode": "override",
+            "predicate": [
+              "cosmic-attunement:photon"
+            ],
+            "property": "damage-type",
+            "value": "fire",
+            "selectors": [
+              "cosmic-blast-damage"
+            ]
+          },
+          {
+            "key": "DamageAlteration",
+            "mode": "override",
+            "predicate": [
+              "cosmic-attunement:graviton"
+            ],
+            "property": "damage-type",
+            "value": "bludgeoning",
+            "selectors": [
+              "cosmic-blast-damage"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

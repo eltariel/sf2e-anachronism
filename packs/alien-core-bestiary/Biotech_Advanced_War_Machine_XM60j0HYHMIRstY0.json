@@ -317,7 +317,12 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 10
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -367,7 +372,7 @@
           "value": "reaction"
         },
         "description": {
-          "value": "<p><strong>Trigger</strong> The war machine would be reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The war machine self-destructs, dealing @Damage[8d6[electricity]] damage (@Check[reflex|dc:25|basic]  save) to all creatures in a 60-foot radius. For 1 minute after this ability is used, any creature that touches the war machine's remains is exposed to incredible radiation sickness (<em>GM Core</em> 91).</p>",
+          "value": "<p><strong>Trigger</strong> The war machine would be reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The war machine self-destructs, dealing @Damage[8d6[electricity]|options:area-damage] damage (@Check[reflex|dc:25|basic|options:area-effect] save) to all creatures in a 60-foot radius. For 1 minute after this ability is used, any creature that touches the war machine's remains is exposed to incredible radiation sickness.</p>",
           "gm": ""
         },
         "publication": {
@@ -621,7 +626,25 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "hypersonic-burst",
+            "toggleable": true,
+            "value": false
+          },
+          {
+            "key": "FlatModifier",
+            "selector": [
+              "land-speed"
+            ],
+            "value": 10,
+            "type": "circumstance",
+            "predicate": [
+              "hypersonic-burst"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -668,7 +691,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>When a war machine makes an aurora beam Strike against a creature, it absorbs one of the target's memories and remotely transmits the information to its pilot. The target must succeed at a @Check[fortitude|dc:25] saving throw or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>",
+          "value": "<p>When a war machine makes an aurora beam Strike against a creature, it absorbs one of the target's memories and remotely transmits the information to its pilot. The target must succeed at a @Check[fortitude|dc:25|options:inflicts:stupefied] saving throw or become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>",
           "gm": ""
         },
         "publication": {

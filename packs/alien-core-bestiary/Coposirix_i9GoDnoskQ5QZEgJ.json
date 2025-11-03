@@ -247,7 +247,7 @@
           "value": "reaction"
         },
         "description": {
-          "value": "<p><strong>Trigger</strong> The coposirix takes damage</p><hr /><p><strong>Effect</strong> The coposirix's body absorbs some of what damaged it until the end of its next turn, the material seeping into its constituent copi and changing its composition. The effects of this change depends on the nature of the damage.</p>",
+          "value": "<p><strong>Trigger</strong> The coposirix takes damage</p><hr /><p><strong>Effect</strong> The coposirix's body absorbs some of what damaged it until the end of its next turn, the material seeping into its constituent copi and changing its composition. The effects of this change depends on the nature of the damage.</p><ul><li><p><strong>Energy Damage</strong> The coposirix's attacks deal an additional 2d6 damage of the same type as the energy damage dealt to it.</p></li><li><p><strong>Physical Damage</strong> The coposirix gains resistance 6 to physical damage. If the damage was dealt by a weapon made of a special material, such as silver, the coposirix's battering sludge Strike counts as that same material for the duration of the effect.</p></li></ul>",
           "gm": ""
         },
         "publication": {
@@ -294,118 +294,6 @@
         "default": 0
       },
       "_key": "!actors.items!i9GoDnoskQ5QZEgJ.X3KSW46iLG1a3m06"
-    },
-    {
-      "type": "action",
-      "name": "Energy Damage",
-      "system": {
-        "actionType": {
-          "value": "passive"
-        },
-        "description": {
-          "value": "<p>The coposirix's attacks deal an additional 2d6 damage of the same type as the energy damage dealt to it.</p>",
-          "gm": ""
-        },
-        "publication": {
-          "title": "",
-          "authors": "",
-          "license": "OGL",
-          "remaster": false
-        },
-        "rules": [],
-        "slug": null,
-        "traits": {
-          "otherTags": [],
-          "value": []
-        },
-        "_migration": {
-          "version": 0.946,
-          "previous": {
-            "schema": 0.943,
-            "foundry": "13.350",
-            "system": "7.5.2"
-          }
-        },
-        "actions": {
-          "value": null
-        },
-        "category": "defensive",
-        "deathNote": false
-      },
-      "effects": [],
-      "_id": "DKfwudCQzYAy3KAA",
-      "img": "systems/pf2e/icons/actions/Passive.webp",
-      "folder": null,
-      "sort": 0,
-      "flags": {},
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.350",
-        "systemId": "pf2e",
-        "systemVersion": "7.6.2"
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_key": "!actors.items!i9GoDnoskQ5QZEgJ.DKfwudCQzYAy3KAA"
-    },
-    {
-      "type": "action",
-      "name": "Physical Damage",
-      "system": {
-        "actionType": {
-          "value": "passive"
-        },
-        "description": {
-          "value": "<p>The coposirix gains resistance 6 to physical damage. If the damage was dealt by a weapon made of a special material, such as silver, the coposirix's battering sludge Strike counts as that same material for the duration of the effect.</p>",
-          "gm": ""
-        },
-        "publication": {
-          "title": "",
-          "authors": "",
-          "license": "OGL",
-          "remaster": false
-        },
-        "rules": [],
-        "slug": null,
-        "traits": {
-          "otherTags": [],
-          "value": []
-        },
-        "_migration": {
-          "version": 0.946,
-          "previous": {
-            "schema": 0.943,
-            "foundry": "13.350",
-            "system": "7.5.2"
-          }
-        },
-        "actions": {
-          "value": null
-        },
-        "category": "defensive",
-        "deathNote": false
-      },
-      "effects": [],
-      "_id": "4WNy8RfvNuc6bpa5",
-      "img": "systems/pf2e/icons/actions/Passive.webp",
-      "folder": null,
-      "sort": 0,
-      "flags": {},
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.350",
-        "systemId": "pf2e",
-        "systemVersion": "7.6.2"
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_key": "!actors.items!i9GoDnoskQ5QZEgJ.4WNy8RfvNuc6bpa5"
     },
     {
       "type": "melee",

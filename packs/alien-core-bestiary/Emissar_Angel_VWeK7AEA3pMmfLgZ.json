@@ -331,23 +331,14 @@
           {
             "key": "Aura",
             "radius": 30,
-            "traits": [],
             "effects": [
               {
                 "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.t5ZPkSBVnNF4Rm04",
                 "affects": "allies"
-              }
-            ]
-          },
-          {
-            "key": "Aura",
-            "radius": 30,
-            "traits": [],
-            "effects": [
+              },
               {
                 "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.jbyNkh8q1TWg8APb",
-                "affects": "enemies",
-                "includesSelf": true
+                "affects": "enemies"
               }
             ]
           }

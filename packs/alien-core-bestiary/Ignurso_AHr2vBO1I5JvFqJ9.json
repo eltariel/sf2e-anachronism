@@ -575,7 +575,24 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              {
+                "or": [
+                  "target:condition:grabbed",
+                  "target:condition:restrained"
+                ]
+              }
+            ],
+            "selector": [
+              "claw-damage"
+            ],
+            "value": 3,
+            "type": "circumstance"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

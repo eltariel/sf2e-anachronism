@@ -246,7 +246,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>If a cloud skate dies due to fire or electricity damage, its internal reservoirs of explosive gases and combustible fluids detonate in a @Template[type:emanation|distance:20] that deals @Damage[6d8[fire]|options:area-damage] damage (@Check[reflex|dc:21|basic] save).</p>",
+          "value": "<p>If a cloud skate dies due to fire or electricity damage, its internal reservoirs of explosive gases and combustible fluids detonate in a @Template[type:emanation|distance:20] that deals @Damage[6d8[fire]|options:area-damage] damage (@Check[reflex|dc:21|basic|options:area-effect] save).</p>",
           "gm": ""
         },
         "publication": {
@@ -376,7 +376,7 @@
         },
         "category": "offensive",
         "description": {
-          "value": "<p>@Check[reflex|dc:21], @Damage[(2d6+3)[bludgeoning]] damage, [[/act escape dc=21]], Rupture12</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>",
+          "value": "<p>@Check[reflex|dc:21|options:damaging-effect,inflicts:grabbed,inflicts:slowed], @Damage[(2d6+3)[bludgeoning]] damage, [[/act escape dc=21]], Rupture 12</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>",
           "gm": ""
         },
         "publication": {
@@ -428,7 +428,7 @@
           "value": "free"
         },
         "description": {
-          "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Until the beginning of its next turn, the cloud skate gains a +75-foot status bonus to its fly Speed and deals an additional @Damage[1d10[slashing]] damage with its tail Strikes.</p>",
+          "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Until the beginning of its next turn, the cloud skate gains a +75-foot status bonus to its fly Speed and deals an additional 1d10 slashing damage with its tail Strikes.</p>",
           "gm": ""
         },
         "publication": {
@@ -458,7 +458,12 @@
         "deathNote": false,
         "frequency": {
           "max": 1,
-          "per": "PT1H"
+          "per": "PT1H",
+          "value": 1
+        },
+        "selfEffect": {
+          "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.g5T2YGRn0nSGKYyy",
+          "name": "Effect: Natural Thruster"
         }
       },
       "effects": [],
@@ -479,6 +484,87 @@
         "default": 0
       },
       "_key": "!actors.items!J4ZwkpWk2eKQKJFg.1GUs6pHk0o5TrpRL"
+    },
+    {
+      "name": "Effect: Natural Thruster",
+      "type": "effect",
+      "effects": [],
+      "system": {
+        "_migration": {
+          "version": 0.946,
+          "previous": null
+        },
+        "description": {
+          "value": "<p>You gain a +75-foot status bonus to your fly Speed and deal an additional 1d10 slashing damage with your tail Strikes.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "title": "Starfinder Alien Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "value": 75,
+            "type": "status",
+            "selector": [
+              "fly-speed"
+            ]
+          },
+          {
+            "key": "DamageDice",
+            "diceNumber": 1,
+            "dieSize": "d10",
+            "selector": "tail-damage",
+            "damageType": "slashing"
+          }
+        ],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "level": {
+          "value": 1
+        },
+        "duration": {
+          "value": 1,
+          "unit": "rounds",
+          "expiry": "turn-start",
+          "sustained": false
+        },
+        "tokenIcon": {
+          "show": true
+        },
+        "unidentified": false,
+        "start": {
+          "value": 24,
+          "initiative": null
+        },
+        "badge": null,
+        "fromSpell": false,
+        "context": null
+      },
+      "img": "icons/magic/air/wind-tornado-wall-blue.webp",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "HfqCvkteYnTykQsA": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.sf2e-anachronism.bestiary-effects.Item.g5T2YGRn0nSGKYyy",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "pf2e",
+        "systemVersion": "7.6.2"
+      },
+      "_id": "mnjnMuF0FBPIx42g",
+      "_key": "!actors.items!J4ZwkpWk2eKQKJFg.mnjnMuF0FBPIx42g"
     }
   ],
   "flags": {},

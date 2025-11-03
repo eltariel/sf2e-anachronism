@@ -861,7 +861,9 @@
         "traits": {
           "value": [
             "analog",
+            "expend-1",
             "kickback",
+            "mag-1",
             "range-increment-120",
             "reload-1",
             "tracking-1",

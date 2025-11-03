@@ -814,6 +814,8 @@
         },
         "traits": {
           "value": [
+            "expend-2",
+            "mag-10",
             "range-increment-40",
             "reload-1",
             "tech"
@@ -931,7 +933,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>A Free Captain knave's melee attacks gain the trip trait and Knockdown ability against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>",
+          "value": "<p>A Free Captain knave's melee attacks gain the trip trait and @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown} ability against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>",
           "gm": ""
         },
         "publication": {
@@ -940,7 +942,32 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "definition": [
+              "item:slug:baton"
+            ],
+            "key": "AdjustStrike",
+            "mode": "add",
+            "predicate": [
+              "target:condition:off-guard"
+            ],
+            "property": "weapon-traits",
+            "value": "trip"
+          },
+          {
+            "key": "Note",
+            "selector": [
+              "baton-attack-roll"
+            ],
+            "title": "@Localize[PF2E.AttackEffectKnockdown]  <span class=\"action-glyph\">1</span>",
+            "visibility": "owner",
+            "text": "@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]",
+            "predicate": [
+              "target:condition:off-guard"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -996,7 +1023,19 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "EphemeralEffect",
+            "predicate": [
+              "target:condition:frightened"
+            ],
+            "selectors": [
+              "strike-attack-roll",
+              "strike-damage"
+            ],
+            "uuid": "Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

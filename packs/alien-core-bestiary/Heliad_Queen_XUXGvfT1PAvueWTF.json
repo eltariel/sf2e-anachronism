@@ -392,8 +392,7 @@
               "primal",
               "visual"
             ],
-            "effects": [],
-            "radius": 30
+            "radius": 60
           }
         ],
         "slug": null,
@@ -447,7 +446,7 @@
           "value": "reaction"
         },
         "description": {
-          "value": "<p><strong>Trigger</strong> The heliad dies</p><hr /><p><strong>Effect</strong> The heliad's body explodes into brilliant, luminous flame. Each creature in a @Template[type:emanation|distance:10] takes @Damage[12d8[fire]|options:area-damage] damage (@Check[reflex|dc:34|basic] save). Creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
+          "value": "<p><strong>Trigger</strong> The heliad queen dies</p><hr /><p><strong>Effect</strong> The heliad's body explodes into brilliant, luminous flame. Each creature in a @Template[type:emanation|distance:10] takes @Damage[12d8[fire]|options:area-damage] damage (@Check[reflex|dc:34|basic] save). Creatures that critically fail are @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute.</p>",
           "gm": ""
         },
         "publication": {

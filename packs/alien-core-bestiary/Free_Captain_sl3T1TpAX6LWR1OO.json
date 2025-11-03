@@ -501,7 +501,10 @@
           "value": [
             "analog",
             "deadly-d6",
-            "sweep"
+            "powered",
+            "sweep",
+            "tech",
+            "tracking-1"
           ],
           "otherTags": []
         },
@@ -1116,62 +1119,6 @@
     },
     {
       "type": "action",
-      "name": "Area Fire",
-      "system": {
-        "actionType": {
-          "value": "action"
-        },
-        "description": {
-          "value": "<p><strong>Starfall Pistol</strong> (@Template[type:line|distance:20], expend 5, mag 10, reload 1, tech, tracking +1, unwieldy)</p><p><strong>Damage</strong> @Damage[2d6[fire],2d6[void]] (see soul squall; @Check[reflex|dc:22|basic] save)</p>",
-          "gm": ""
-        },
-        "publication": {
-          "title": "",
-          "authors": "",
-          "license": "OGL",
-          "remaster": false
-        },
-        "rules": [],
-        "slug": null,
-        "traits": {
-          "otherTags": [],
-          "value": []
-        },
-        "_migration": {
-          "version": 0.946,
-          "previous": {
-            "schema": 0.943,
-            "foundry": "13.350",
-            "system": "7.5.2"
-          }
-        },
-        "actions": {
-          "value": 2
-        },
-        "category": "offensive",
-        "deathNote": false
-      },
-      "effects": [],
-      "_id": "fYWg0yXUuMeX0NQG",
-      "img": "systems/pf2e/icons/actions/TwoActions.webp",
-      "folder": null,
-      "sort": 0,
-      "flags": {},
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.350",
-        "systemId": "pf2e",
-        "systemVersion": "7.6.2"
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_key": "!actors.items!sl3T1TpAX6LWR1OO.fYWg0yXUuMeX0NQG"
-    },
-    {
-      "type": "action",
       "name": "Give ’Em No Quarter!",
       "system": {
         "actionType": {
@@ -1248,7 +1195,24 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "soul-squall",
+            "toggleable": true,
+            "value": true
+          },
+          {
+            "damageType": "void",
+            "diceNumber": 2,
+            "dieSize": "d6",
+            "key": "DamageDice",
+            "predicate": [
+              "soul-squall"
+            ],
+            "selector": "area-fire-damage"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -1342,6 +1306,76 @@
         "default": 0
       },
       "_key": "!actors.items!sl3T1TpAX6LWR1OO.ly3Jm5e6LmCSYR7o"
+    },
+    {
+      "type": "melee",
+      "name": "Area Fire",
+      "effects": [],
+      "system": {
+        "_migration": {
+          "version": 0.946,
+          "previous": null
+        },
+        "description": {
+          "value": "<p>see soul squall</p>",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "area-line",
+            "expend-5",
+            "mag-10",
+            "reload-1",
+            "tech",
+            "tracking-1",
+            "unwieldy"
+          ]
+        },
+        "action": "area-fire",
+        "area": {
+          "type": "line",
+          "value": 20
+        },
+        "damageRolls": {
+          "t0f4ZsIdVdBRShNL": {
+            "damage": "2d6",
+            "damageType": "fire"
+          }
+        },
+        "bonus": {
+          "value": 12
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "_id": "ozmSrAVhNa1Uleo9",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "uALuXwktnyPWpcY7": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "pf2e",
+        "systemVersion": "7.6.2"
+      },
+      "_key": "!actors.items!sl3T1TpAX6LWR1OO.ozmSrAVhNa1Uleo9"
     }
   ],
   "effects": [],

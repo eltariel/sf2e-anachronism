@@ -15,7 +15,7 @@
         "details": "all-around vision"
       },
       "allSaves": {
-        "value": ""
+        "value": "+2 status to all saves vs. occult"
       },
       "speed": {
         "value": 50,
@@ -314,7 +314,7 @@
     },
     {
       "type": "action",
-      "name": "+2 status to all saves vs. occult",
+      "name": "+2 Status to All Saves vs. Occult",
       "system": {
         "actionType": {
           "value": "passive"
@@ -498,7 +498,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>90 feet. The swirl of constant uploads and downloads near the Akashic dragon make attempts to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo] unpredictable. A creature other than an akashic dragon that enters or begins its turn in the area must attempt a @Check[will|dc:38] save. Regardless of the result of the saving throw, the creature is temporarily immune to this dragon's Akashic interference for 1 minute.</p><hr /><p><strong>Critical Success</strong> For 1 round, when the creature attempts to Recall Knowledge, it gains a +3 status bonus to its check.</p><p><strong>Success</strong> The creature is unaffected.</p><p><strong>Failure</strong> For 1 round, when the creature attempts to Recall Knowledge, it takes a –3 status penalty to its check.</p><p><strong>Critical Failure</strong> As failure, but the effect lasts 1 minute.</p>",
+          "value": "<p>90 feet. The swirl of constant uploads and downloads near the Akashic dragon make attempts to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo] unpredictable. A creature other than an akashic dragon that enters or begins its turn in the area must attempt a @Check[will|dc:38|options:area-effect] save. Regardless of the result of the saving throw, the creature is temporarily immune to this dragon's Akashic interference for 1 minute.</p><hr /><p><strong>Critical Success</strong> For 1 round, when the creature attempts to Recall Knowledge, it gains a +3 status bonus to its check.</p><p><strong>Success</strong> The creature is unaffected.</p><p><strong>Failure</strong> For 1 round, when the creature attempts to Recall Knowledge, it takes a –3 status penalty to its check.</p><p><strong>Critical Failure</strong> As failure, but the effect lasts 1 minute.</p>",
           "gm": ""
         },
         "publication": {
@@ -815,7 +815,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The dragon condenses cutting truths and fiery revelations from the Akashic Record into sizzling laser fire that they project as a cone from their primary eye to assail their foes. This deals @Damage[18d6[fire]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[reflex|dc:38|basic] save). If a creature critically fails its Reflex save against Akashic Barrage and the Akashic dragon has succeeded at a check to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo] about the creature in the last minute, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round. The dragon can't use Akashic Barrage again for [[/gmr 1d4 #Recharge Akashic Barrage]]{1d4 rounds}.</p>",
+          "value": "<p>The dragon condenses cutting truths and fiery revelations from the Akashic Record into sizzling laser fire that they project as a cone from their primary eye to assail their foes. This deals @Damage[18d6[fire]|options:area-damage] damage in a @Template[type:cone|distance:30] (@Check[reflex|dc:38|basic|options:area-effect,inflicts:stupefied] save). If a creature critically fails its Reflex save against Akashic Barrage and the Akashic dragon has succeeded at a check to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo] about the creature in the last minute, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round. The dragon can't use Akashic Barrage again for [[/gmr 1d4 #Recharge Akashic Barrage]]{1d4 rounds}.</p>",
           "gm": ""
         },
         "publication": {
@@ -1491,7 +1491,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p><strong>Requirements</strong> The dragon has successfully Recalled Knowledge about an enemy within 90 feet within the last minute</p><hr /><p><strong>Effect</strong> The dragon utters a shocking truth about the creature that even it might not know, causing it and its allies to hesitate or act erratically. Every enemy within 90 feet that can hear the secret must attempt a @Check[will|dc:38] save. Each creature is then immune to Shocking Revelation for 24 hours.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round.</p><p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>",
+          "value": "<p><strong>Requirements</strong> The dragon has successfully Recalled Knowledge about an enemy within 90 feet within the last minute</p><hr /><p><strong>Effect</strong> The dragon utters a shocking truth about the creature that even it might not know, causing it and its allies to hesitate or act erratically. Every enemy within 90 feet that can hear the secret must attempt a @Check[will|dc:38|options:area-effect,inflicts:slowed,inflicts:confused] save. Each creature is then immune to Shocking Revelation for 24 hours.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} for 1 round.</p><p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>",
           "gm": ""
         },
         "publication": {

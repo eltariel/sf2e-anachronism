@@ -1027,6 +1027,8 @@
         },
         "traits": {
           "value": [
+            "expend-2",
+            "mag-10",
             "nonlethal",
             "range-increment-30",
             "reload-1",

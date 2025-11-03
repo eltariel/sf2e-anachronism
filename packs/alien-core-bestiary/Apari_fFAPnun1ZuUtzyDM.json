@@ -617,7 +617,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p><strong>Requirements</strong> The apari's carapace isn't broken</p><hr /><p><strong>Effect</strong> The apari releases a bevy of tiny, flying constituents in a @Template[type:cone|distance:15] that sting all within. Each creature in the area takes @Damage[4d6[piercing]|options:area-damage] damage with a @Check[reflex|dc:21|basic] save.</p><p>Can alternatively switch to @Damage[4d6[bludgeoning]|options:area-damage] or @Damage[4d6[slashing]|options:area-damage] with the Fungible ability.</p>",
+          "value": "<p><strong>Requirements</strong> The apari's carapace isn't broken</p><hr /><p><strong>Effect</strong> The apari releases a bevy of tiny, flying constituents in a @Template[type:cone|distance:15] that sting all within. Each creature in the area takes @Damage[4d6[piercing]|options:area-damage] damage with a @Check[reflex|dc:21|basic|options:area-effect] save.</p>",
           "gm": ""
         },
         "publication": {
@@ -741,7 +741,7 @@
         "rules": [
           {
             "key": "RollOption",
-            "option": "claw-damage-type",
+            "option": "fungible",
             "suboptions": [
               {
                 "label": "PF2E.TraitBludgeoning",
@@ -757,21 +757,32 @@
               }
             ],
             "toggleable": true,
-            "value": true,
             "alwaysActive": true,
-            "selection": "slashing"
+            "selection": "slashing",
+            "value": true
           },
           {
             "key": "DamageAlteration",
             "mode": "override",
             "property": "damage-type",
-            "predicate": [
-              "item:slug:claw"
-            ],
             "selectors": [
-              "strike-damage"
+              "damage"
             ],
-            "value": "{item|flags.pf2e.rulesSelections.clawDamageType}"
+            "value": "{item|flags.pf2e.rulesSelections.fungible}",
+            "predicate": [
+              {
+                "or": [
+                  {
+                    "and": [
+                      "item:type:melee",
+                      "item:slug:claw"
+                    ]
+                  },
+                  "item:slug:constituent-sortie",
+                  "item:slug:swarming-bites"
+                ]
+              }
+            ]
           }
         ],
         "slug": "fungible",

@@ -562,6 +562,8 @@
         "traits": {
           "value": [
             "arc",
+            "expend-2",
+            "mag-10",
             "range-increment-50",
             "reload-1",
             "tech"

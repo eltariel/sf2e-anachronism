@@ -29,52 +29,68 @@
       },
       "immunities": [
         {
-          "type": "bleed"
+          "type": "bleed",
+          "exceptions": []
         },
         {
-          "type": "death-effects"
+          "type": "death-effects",
+          "exceptions": []
         },
         {
-          "type": "disease"
+          "type": "disease",
+          "exceptions": []
         },
         {
-          "type": "doomed"
+          "type": "doomed",
+          "exceptions": []
         },
         {
-          "type": "drained"
+          "type": "drained",
+          "exceptions": []
         },
         {
-          "type": "fatigued"
+          "type": "fatigued",
+          "exceptions": []
         },
         {
-          "type": "grappled"
+          "type": "mental",
+          "exceptions": []
         },
         {
-          "type": "mental"
+          "type": "nonlethal-attacks",
+          "exceptions": []
         },
         {
-          "type": "nonlethal-attacks"
+          "type": "paralyzed",
+          "exceptions": []
         },
         {
-          "type": "paralyzed"
+          "type": "poison",
+          "exceptions": []
         },
         {
-          "type": "poison"
+          "type": "precision",
+          "exceptions": []
         },
         {
-          "type": "precision"
+          "type": "prone",
+          "exceptions": []
         },
         {
-          "type": "prone"
+          "type": "restrained",
+          "exceptions": []
         },
         {
-          "type": "restrained"
+          "type": "sickened",
+          "exceptions": []
         },
         {
-          "type": "sickened"
+          "type": "unconscious",
+          "exceptions": []
         },
         {
-          "type": "unconscious"
+          "type": "grabbed",
+          "exceptions": []
         }
       ],
       "resistances": [
@@ -117,7 +133,7 @@
     "details": {
       "languages": {
         "value": [],
-        "details": "First one, Can't speak, Telepathy 300 feet page 210"
+        "details": "First one, Can't speak, Telepathy 300 feet"
       },
       "level": {
         "value": 25
@@ -340,7 +356,15 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Immunity",
+            "mode": "remove",
+            "type": [
+              "healing"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

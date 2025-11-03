@@ -344,7 +344,12 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 100
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

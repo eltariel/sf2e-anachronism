@@ -809,6 +809,7 @@
         },
         "traits": {
           "value": [
+            "expend-2",
             "mag-20",
             "range-increment-40",
             "reload-1",
@@ -880,7 +881,15 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 10,
+            "traits": [
+              "fire"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

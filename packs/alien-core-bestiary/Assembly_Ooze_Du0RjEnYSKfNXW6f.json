@@ -388,7 +388,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p><strong>Requirements</strong> The assembly ooze's last action was a successful pseudopod Strike</p><hr /><p><strong>Effect</strong> The ooze attempts to [[/act disarm]] the creature it hit. It gains a +4 status bonus to the Athletics check. This attempt neither applies nor counts toward the ooze's multiple attack penalty.</p>",
+          "value": "<p><strong>Requirements</strong> The assembly ooze's last action was a successful pseudopod Strike</p><hr /><p><strong>Effect</strong> The ooze attempts to [[/act disarm options=sticky-disarm]] the creature it hit. It gains a +4 status bonus to the Athletics check. This attempt neither applies nor counts toward the ooze's multiple attack penalty.</p>",
           "gm": ""
         },
         "publication": {
@@ -401,8 +401,7 @@
           {
             "key": "RollOption",
             "option": "sticky-disarm",
-            "toggleable": true,
-            "value": false
+            "toggleable": true
           },
           {
             "key": "FlatModifier",

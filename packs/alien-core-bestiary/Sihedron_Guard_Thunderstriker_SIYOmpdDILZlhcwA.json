@@ -401,6 +401,8 @@
         "traits": {
           "value": [
             "caster",
+            "expend-1",
+            "mag-35",
             "range-increment-60",
             "reload-1",
             "tech",

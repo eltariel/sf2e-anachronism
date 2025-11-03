@@ -452,7 +452,14 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "value": 100,
+            "path": "flags.pf2e.revertTempHP"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

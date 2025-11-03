@@ -374,7 +374,21 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "traits": [
+              "emotion",
+              "mental",
+              "occult",
+              "visual"
+            ],
+            "radius": 30,
+            "predicate": [
+              "facade-form"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -927,7 +941,45 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "facade-form",
+            "toggleable": true
+          },
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "facade-form"
+            ],
+            "selector": [
+              "deception-dc",
+              "deception"
+            ],
+            "slug": "rubble-bonus",
+            "value": 4
+          },
+          {
+            "key": "SubstituteRoll",
+            "predicate": [
+              "facade-form"
+            ],
+            "required": true,
+            "selectors": [
+              "deception-dc",
+              "deception"
+            ],
+            "slug": "facade-form-bonus",
+            "value": 10
+          },
+          {
+            "key": "CreatureSize",
+            "predicate": [
+              "facade-form"
+            ],
+            "value": "tiny"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

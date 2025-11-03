@@ -643,7 +643,9 @@
           "value": [
             "analog",
             "concussive",
+            "expend-1",
             "kickback",
+            "mag-3",
             "range-increment-15",
             "ranged-shove",
             "razing",

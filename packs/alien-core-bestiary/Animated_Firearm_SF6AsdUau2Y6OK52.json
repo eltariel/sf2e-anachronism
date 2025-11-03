@@ -283,6 +283,10 @@
             "effectUnreliableTech2": {
               "id": "hTmUPh6srqfL7MVn",
               "onDelete": "detach"
+            },
+            "glitching2": {
+              "id": "Crn4Ubz7YtSM7tR5",
+              "onDelete": "detach"
             }
           }
         }

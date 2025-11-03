@@ -736,6 +736,8 @@
         "traits": {
           "value": [
             "analog",
+            "expend-1",
+            "mag-10",
             "range-increment-60",
             "reload-1",
             "tracking-1"
@@ -1216,7 +1218,10 @@
           "value": [
             "analog",
             "deadly-d12",
+            "expend-1",
+            "fatal-d12",
             "kickback",
+            "mag-1",
             "range-increment-120",
             "reload-1",
             "tracking-1",

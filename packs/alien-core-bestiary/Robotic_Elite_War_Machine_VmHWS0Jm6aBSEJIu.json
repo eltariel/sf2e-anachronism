@@ -301,7 +301,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>The war machine can detect all creatures and objects within 100 feet of itself, treating hidden, invisible, and unobserved creatures as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
+          "value": "<p>The war machine can detect all creatures and objects within 100 feet of itself, treating @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}, and unobserved creatures as @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
           "gm": ""
         },
         "publication": {
@@ -663,7 +663,25 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "hypersonic-burst",
+            "toggleable": true,
+            "value": false
+          },
+          {
+            "key": "FlatModifier",
+            "selector": [
+              "land-speed"
+            ],
+            "value": 10,
+            "type": "circumstance",
+            "predicate": [
+              "hypersonic-burst"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

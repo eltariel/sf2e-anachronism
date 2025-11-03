@@ -665,7 +665,9 @@
           "value": 24
         },
         "attackEffects": {
-          "value": []
+          "value": [
+            "foretell-doom"
+          ]
         },
         "action": "strike",
         "area": null

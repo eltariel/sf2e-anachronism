@@ -364,7 +364,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>60 feet. Non-allied comm units and other computers don't function within the remote war machine's aura unless their operator succeeds at a Computers check against the war machine's Stealth DC as an Interact action.</p>",
+          "value": "<p>60 feet. Non-allied comm units and other computers don't function within the remote war machine's aura unless their operator succeeds at a @Check[computers|against:stealth|rollerRole:target] check against the war machine's Stealth DC as an Interact action.</p>",
           "gm": ""
         },
         "publication": {
@@ -432,7 +432,7 @@
           "value": "reaction"
         },
         "description": {
-          "value": "<p><strong>Trigger</strong> The war machine would be reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The war machine self-destructs, dealing @Damage[16d6[electricity]] damage (@Check[reflex|dc:36|basic] save) to all creatures in a 60-foot radius. For 1 minute after this ability is used, any creature that touches the war machine's remains is exposed to incredible radiation sickness (<em>GM Core</em> 91).</p>",
+          "value": "<p><strong>Trigger</strong> The war machine would be reduced to 0 Hit Points</p><hr /><p><strong>Effect</strong> The war machine self-destructs, dealing @Damage[16d6[electricity]|options:area-damage] damage (@Check[reflex|dc:36|basic|options:area-effect] save) to all creatures in a @Template[emanation|distance:60]{60-foot radius}. For 1 minute after this ability is used, any creature that touches the war machine's remains is exposed to incredible radiation sickness.</p>",
           "gm": ""
         },
         "publication": {
@@ -779,7 +779,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The war machine becomes invisible for 1 minute or until it attempts to make a Strike.</p>",
+          "value": "<p>The war machine becomes @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} for 1 minute or until it attempts to make a Strike.</p>",
           "gm": ""
         },
         "publication": {

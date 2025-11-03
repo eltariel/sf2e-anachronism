@@ -37,7 +37,7 @@
         "value": [
           "shirren"
         ],
-        "details": "Telepathy 100 feet"
+        "details": "telepathy 100 feet"
       },
       "level": {
         "value": 6
@@ -247,7 +247,19 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 30,
+            "effects": [
+              {
+                "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.ck4ogo5HX97e5UuM",
+                "affects": "allies",
+                "includesSelf": false
+              }
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -459,7 +471,19 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "value": -2,
+            "predicate": [
+              "self:shield:destroyed"
+            ],
+            "type": "circumstance",
+            "selector": [
+              "battering-arm-attack"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -753,7 +777,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The bastorox unleashes a bolt of bioelectric energy from its arm blade. The bolt deals @Damage[6d8[electricity]|options:area-damage] damage to all creatures in a @Template[type:line|distance:30] with a @Check[reflex|dc:22|basic] save. The bastorox can't use Bioelectric Jolt again for [[/gmr 1d4 #Recharge Bioelectric Jolt]]{1d4 rounds}.</p>",
+          "value": "<p>The bastorox unleashes a bolt of bioelectric energy from its arm blade. The bolt deals @Damage[6d8[electricity]|options:area-damage] damage to all creatures in a @Template[type:line|distance:30] with a @Check[reflex|dc:22|basic|options:area-effect] save. The bastorox can't use Bioelectric Jolt again for [[/gmr 1d4 #Recharge Bioelectric Jolt]]{1d4 rounds}.</p>",
           "gm": ""
         },
         "publication": {

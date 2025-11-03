@@ -28,7 +28,7 @@
       "value": []
     },
     "publication": {
-      "title": "Paizo Blog: Tech Class Playtest Encounter 2",
+      "title": "Starfinder Alien Core",
       "authors": "",
       "license": "ORC",
       "remaster": true
@@ -63,9 +63,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "13.346",
+    "coreVersion": "13.350",
     "systemId": "pf2e",
-    "systemVersion": "7.2.0",
+    "systemVersion": "7.6.2",
     "exportSource": null
   },
   "_id": "ppKeWbPcSaVqD1Cj",

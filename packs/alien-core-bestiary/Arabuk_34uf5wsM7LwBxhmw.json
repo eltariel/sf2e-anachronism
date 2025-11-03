@@ -503,7 +503,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>A non-arabuk creature standing on snow that fails its Reflex save against an arabuk's antler reverberation is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Up to a 20-foot cube of snow in the area of an antler reverberation collapses, dealing @Damage[5d6[bludgeoning]] damage to adjacent creatures (@Check[reflex|dc:24|basic] save). On a slope, this causes the snow and any creatures that fail its save to move downhill 30 feet per round. At the start of its turn, each creature caught in the avalanche takes @Damage[3d6[bludgeoning]] damage (@Check[reflex|dc:24|basic] save) and, on a failure, is still caught in the avalanche.</p>",
+          "value": "<p>A non-arabuk creature standing on snow that fails its Reflex save against an arabuk's antler reverberation is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Up to a @Template[cube|distance:20] of snow in the area of an antler reverberation collapses, dealing @Damage[5d6[bludgeoning]|options:area-damage] damage to adjacent creatures (@Check[reflex|dc:24|basic|options:area-effect] save). On a slope, this causes the snow and any creatures that fail its save to move downhill 30 feet per round. At the start of its turn, each creature caught in the avalanche takes @Damage[3d6[bludgeoning]|options:area-damage] damage (@Check[reflex|dc:24|basic|options:area-effect] save) and, on a failure, is still caught in the avalanche.</p>",
           "gm": ""
         },
         "publication": {
@@ -559,7 +559,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The arabuk clatters its antlers together by shaking its head. Until the end of its turn, any creature hit by its antlers must succeed at a @Check[fortitude|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} on a critical failure).</p>",
+          "value": "<p>The arabuk clatters its antlers together by shaking its head. Until the end of its turn, any creature hit by its antlers must succeed at a @Check[fortitude|dc:22|options:inflicts:stunned] save or become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 2} on a critical failure).</p>",
           "gm": ""
         },
         "publication": {

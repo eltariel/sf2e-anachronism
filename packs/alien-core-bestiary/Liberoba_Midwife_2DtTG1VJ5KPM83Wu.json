@@ -418,7 +418,17 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 100,
+            "level": "divine, mental",
+            "traits": [
+              "divine",
+              "mental"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

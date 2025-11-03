@@ -588,61 +588,6 @@
       "_key": "!actors.items!iuovM4PRyAX0NwvI.SiogZqFBnmV0vgee"
     },
     {
-      "img": "systems/pf2e/icons/actions/OneAction.webp",
-      "name": "Knockdown",
-      "system": {
-        "actionType": {
-          "value": "action"
-        },
-        "actions": {
-          "value": 1
-        },
-        "category": "offensive",
-        "description": {
-          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>",
-          "gm": ""
-        },
-        "publication": {
-          "license": "ORC",
-          "remaster": true,
-          "title": "Pathfinder Monster Core",
-          "authors": ""
-        },
-        "rules": [],
-        "traits": {
-          "value": [],
-          "otherTags": []
-        },
-        "slug": "knockdown",
-        "_migration": {
-          "version": 0.946,
-          "previous": {
-            "schema": 0.943,
-            "foundry": "13.350",
-            "system": "7.5.2"
-          }
-        }
-      },
-      "type": "action",
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "exportSource": null,
-        "coreVersion": "13.350",
-        "systemId": "pf2e",
-        "systemVersion": "7.6.2"
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "flags": {},
-      "_id": "DivC49guNYs6IU1S",
-      "ownership": {
-        "default": 0
-      },
-      "_key": "!actors.items!iuovM4PRyAX0NwvI.DivC49guNYs6IU1S"
-    },
-    {
       "type": "action",
       "name": "Black Hole",
       "system": {
@@ -827,7 +772,24 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "stellar-rush",
+            "toggleable": true
+          },
+          {
+            "key": "FlatModifier",
+            "selector": [
+              "all-speeds"
+            ],
+            "value": 10,
+            "predicate": [
+              "stellar-rush"
+            ],
+            "type": "circumstance"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

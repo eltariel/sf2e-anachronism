@@ -305,7 +305,53 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "alwaysActive": true,
+            "key": "RollOption",
+            "option": "ravenous-invisibility",
+            "suboptions": [
+              {
+                "label": "PF2E.condition.invisible.name",
+                "value": "invisible"
+              },
+              {
+                "label": "PF2E.condition.undetected.name",
+                "value": "undetected"
+              },
+              {
+                "label": "PF2E.condition.observed.name",
+                "value": "observed"
+              }
+            ],
+            "toggleable": true,
+            "value": true
+          },
+          {
+            "inMemoryOnly": true,
+            "key": "GrantItem",
+            "uuid": "Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML",
+            "predicate": [
+              "ravenous-invisibility:invisible"
+            ]
+          },
+          {
+            "inMemoryOnly": true,
+            "key": "GrantItem",
+            "uuid": "Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC",
+            "predicate": [
+              "ravenous-invisibility:undetected"
+            ]
+          },
+          {
+            "inMemoryOnly": true,
+            "key": "GrantItem",
+            "uuid": "Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G",
+            "predicate": [
+              "ravenous-invisibility:observed"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

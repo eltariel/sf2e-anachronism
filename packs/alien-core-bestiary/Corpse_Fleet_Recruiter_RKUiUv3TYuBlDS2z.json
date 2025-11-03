@@ -100,9 +100,13 @@
       }
     },
     "perception": {
-      "details": "darkvision",
+      "details": "",
       "mod": 12,
-      "senses": [],
+      "senses": [
+        {
+          "type": "darkvision"
+        }
+      ],
       "vision": true
     },
     "saves": {
@@ -421,7 +425,7 @@
         },
         "damageRolls": {
           "pqCJxo9XPLRBFJ72": {
-            "damage": "1d4–1",
+            "damage": "1d4-1",
             "damageType": "electricity",
             "category": null
           }
@@ -861,6 +865,8 @@
         },
         "traits": {
           "value": [
+            "expend-2",
+            "mag-20",
             "range-increment-30",
             "reload-1",
             "tech",
@@ -985,7 +991,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>20 feet. Mindless undead that begin their turn in the area must attempt a @Check[will|dc:22] save; on a failure, the Corpse Fleet recruiter seizes control of that undead. It gains the minion trait.</p>",
+          "value": "<p>20 feet. Mindless undead that begin their turn in the area must attempt a @Check[will|dc:22|options:area-effect] save; on a failure, the Corpse Fleet recruiter seizes control of that undead. It gains the minion trait.</p>",
           "gm": ""
         },
         "publication": {
@@ -2929,7 +2935,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The Corpse Fleet recruiter detonates one mindless undead minion under their control, causing it to explode in a 15-foot-radius burst, dealing @Damage[4d6[slashing]] damage and @Damage[4d6[void]] damage to creatures in the area (@Check[reflex|dc:25|basic] save).</p>",
+          "value": "<p>The Corpse Fleet recruiter detonates one mindless undead minion under their control, causing it to explode in a @Template[burst|distance:15]{15-foot-radius burst}, dealing @Damage[4d6[slashing],4d6[void]|options:area-damage]{4d6 slashing damage and 4d6 void damage} to creatures in the area (@Check[reflex|dc:25|basic|options:area-effect] save).</p>",
           "gm": ""
         },
         "publication": {
@@ -3044,7 +3050,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p><strong>Frequency</strong> once per day</p><p><strong>Requirements</strong> A formerly living creature that died within the last round is within 10 feet</p><hr /><p><strong>Effect</strong> The Corpse Fleet recruiter immediately performs the create undead ritual, as if it were a spell with a casting time of 2 actions and the Corpse Fleet recruiter rolled a critical success on the ritual.</p>",
+          "value": "<p><strong>Frequency</strong> once per day</p><p><strong>Requirements</strong> A formerly living creature that died within the last round is within 10 feet</p><hr /><p><strong>Effect</strong> The Corpse Fleet recruiter immediately performs the @UUID[Compendium.pf2e.spells-srd.c3b6LdLlQDPngNIb]{Create Undead} ritual, as if it were a spell with a casting time of 2 actions and the Corpse Fleet recruiter rolled a critical success on the ritual.</p>",
           "gm": ""
         },
         "publication": {

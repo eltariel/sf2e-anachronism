@@ -9,7 +9,7 @@
       "previous": null
     },
     "description": {
-      "value": "<p>You gain 100 temporary Hit Points.</p>",
+      "value": "<p>You gain temporary Hit Points.</p>",
       "gm": ""
     },
     "publication": {
@@ -21,7 +21,7 @@
     "rules": [
       {
         "key": "TempHP",
-        "value": 100
+        "value": "@actor.flags.pf2e.revertTempHP"
       }
     ],
     "slug": null,
@@ -60,11 +60,11 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.348",
+    "coreVersion": "13.350",
     "systemId": "pf2e",
-    "systemVersion": "7.5.1"
+    "systemVersion": "7.6.2"
   },
   "_id": "ayrgURELCK5rhnna",
-  "sort": 0,
+  "sort": 1500000,
   "_key": "!items!ayrgURELCK5rhnna"
 }

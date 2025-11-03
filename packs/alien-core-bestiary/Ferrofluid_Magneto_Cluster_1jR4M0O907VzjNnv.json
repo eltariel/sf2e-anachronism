@@ -274,7 +274,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>A ferrofluid ooze can feel magnetic fields, allowing it to detect large sources of magnetic metal (Bulk 1 or greater) and items with the tech trait within the listed range.</p>",
+          "value": "<p>A ferrofluid magneto-cluster can feel magnetic fields, allowing it to detect large sources of magnetic metal (Bulk 1 or greater) and items with the tech trait within the listed range.</p>",
           "gm": ""
         },
         "publication": {
@@ -330,7 +330,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>30 feet. A ferrofluid ooze is surrounded by a constant field that interferes with nearby equipment. Items with the tech trait inside the aura take a –1 circumstance penalty to all checks using them. Unattended metal objects in the aura of 1 Bulk or less are pulled adjacent to the ooze.</p>",
+          "value": "<p>30 feet. A ferrofluid magneto-cluster is surrounded by a constant field that interferes with nearby equipment. Items with the tech trait inside the aura take a –1 circumstance penalty to all checks using them. Unattended metal objects in the aura of 1 Bulk or less are pulled adjacent to the ooze.</p>",
           "gm": ""
         },
         "publication": {
@@ -339,7 +339,16 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 30,
+            "traits": [
+              "metal",
+              "primal"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -390,7 +399,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>A ferrofluid ooze that takes fire damage has its magnetic field deactivated until the end of the ooze's next turn. It releases itself from any creature it was attached to, drops any held items, and can't use Magnetic [[/act leap]] or Attach until its magnetic field returns.</p>",
+          "value": "<p>A ferrofluid magneto-cluster that takes fire damage has its magnetic field deactivated until the end of the ooze's next turn. It releases itself from any creature it was attached to, drops any held items, and can't use Magnetic Leap or Attach until its magnetic field returns.</p>",
           "gm": ""
         },
         "publication": {
@@ -513,7 +522,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>A ferrofluid ooze can attach itself to any creature its size or larger that has the tech trait or is wearing or wielding items with the tech trait. This is similar to Grab, but the ooze moves with that creature rather than holding it in place.</p><p>As long as the ooze is attached, it's @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, and the creature it's attached to must succeed at a @Check[flat|dc:11] to Interact with items with the tech trait. On a failure, the item becomes attached to the ooze (treat as if being held by the ooze).</p>",
+          "value": "<p>A ferrofluid magneto-cluster can attach itself to any creature its size or larger that has the tech trait or is wearing or wielding items with the tech trait. This is similar to Grab, but the ooze moves with that creature rather than holding it in place.</p><p>As long as the ooze is attached, it's @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, and the creature it's attached to must succeed at a @Check[flat|dc:11] to Interact with items with the tech trait. On a failure, the item becomes attached to the ooze (treat as if being held by the ooze).</p>",
           "gm": ""
         },
         "publication": {
@@ -634,7 +643,7 @@
           "value": "action"
         },
         "description": {
-          "value": "<p>The ferrofluid ooze instantly Attaches to a creature within its magnetic field that meets the requirements of that ability. A ferrofluid ooze can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}.</p>",
+          "value": "<p>The ferrofluid magneto-cluster instantly Attaches to a creature within its magnetic field that meets the requirements of that ability. A ferrofluid ooze can't use this ability again for [[/gmr 1d4 #Recharge this ability]]{1d4 rounds}.</p>",
           "gm": ""
         },
         "publication": {

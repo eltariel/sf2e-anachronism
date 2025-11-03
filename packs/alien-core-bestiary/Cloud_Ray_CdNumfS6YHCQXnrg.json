@@ -91,9 +91,13 @@
       }
     },
     "perception": {
-      "details": "low-light vision",
+      "details": "",
       "mod": 21,
-      "senses": [],
+      "senses": [
+        {
+          "type": "low-light-vision"
+        }
+      ],
       "vision": true
     },
     "saves": {
@@ -241,7 +245,7 @@
           "value": "passive"
         },
         "description": {
-          "value": "<p>If a cloud skate dies due to fire or electricity damage, its internal reservoirs of explosive gases and combustible fluids detonate in a @Template[type:emanation|distance:20] that deals @Damage[11d8[fire]|options:area-damage] damage (@Check[reflex|dc:30|basic] save).</p>",
+          "value": "<p>If a cloud skate dies due to fire or electricity damage, its internal reservoirs of explosive gases and combustible fluids detonate in a @Template[type:emanation|distance:20] that deals @Damage[11d8[fire]|options:area-damage] damage (@Check[reflex|dc:30|basic|options:area-effect] save).</p>",
           "gm": ""
         },
         "publication": {
@@ -328,7 +332,7 @@
           },
           "PJI0WrMjw02a32r8": {
             "damage": "3d6",
-            "damageType": "bludgeoning",
+            "damageType": "electricity",
             "category": null
           }
         },
@@ -336,7 +340,9 @@
           "value": 26
         },
         "attackEffects": {
-          "value": []
+          "value": [
+            "stunning-lash"
+          ]
         },
         "action": "strike",
         "area": null
@@ -432,7 +438,24 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "lash-out",
+            "toggleable": true,
+            "domain": "tail-attack-roll"
+          },
+          {
+            "key": "FlatModifier",
+            "selector": [
+              "tail-attack-roll"
+            ],
+            "value": -2,
+            "predicate": [
+              "lash-out"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -479,7 +502,7 @@
           "value": "free"
         },
         "description": {
-          "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Until the beginning of its next turn, the cloud skate gains a +80-foot status bonus to its fly Speed and deals an additional @Damage[1d10[slashing]] damage with its tail Strikes.</p>",
+          "value": "<p><strong>Frequency</strong> once per hour</p><hr /><p><strong>Effect</strong> Until the beginning of its next turn, the cloud skate gains a +80-foot status bonus to its fly Speed and deals an additional 1d10 slashing damage with its tail Strikes.</p>",
           "gm": ""
         },
         "publication": {
@@ -488,7 +511,15 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "AdjustModifier",
+            "mode": "upgrade",
+            "selector": "fly-speed",
+            "value": 80,
+            "slug": "natural-thruster"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -510,6 +541,10 @@
         "frequency": {
           "max": 1,
           "per": "PT1H"
+        },
+        "selfEffect": {
+          "uuid": "Compendium.sf2e-anachronism.bestiary-effects.Item.g5T2YGRn0nSGKYyy",
+          "name": "Effect: Natural Thruster"
         }
       },
       "effects": [],

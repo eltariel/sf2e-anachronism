@@ -562,7 +562,17 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Note",
+            "selector": [
+              "damage-received"
+            ],
+            "title": "{item|name}",
+            "visibility": "owner",
+            "text": "{item|description}"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],

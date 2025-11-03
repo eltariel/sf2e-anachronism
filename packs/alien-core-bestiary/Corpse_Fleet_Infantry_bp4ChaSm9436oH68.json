@@ -1134,6 +1134,8 @@
         "traits": {
           "value": [
             "arc",
+            "expend-2",
+            "mag-10",
             "range-increment-30",
             "reload-1",
             "tech"
@@ -1207,6 +1209,8 @@
           "value": [
             "analog",
             "automatic",
+            "expend-1",
+            "mag-20",
             "range-increment-30",
             "reload-2"
           ],
@@ -1347,7 +1351,24 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "RollOption",
+            "option": "fusillade",
+            "toggleable": true,
+            "domain": "ranged-strike-damage"
+          },
+          {
+            "key": "DamageDice",
+            "diceNumber": 1,
+            "dieSize": "d4",
+            "category": "precision",
+            "selector": "ranged-strike-damage",
+            "predicate": [
+              "fusillade"
+            ]
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -1450,6 +1471,65 @@
         "default": 0
       },
       "_key": "!actors.items!bp4ChaSm9436oH68.vD3owkWALc6nTTiX"
+    },
+    {
+      "type": "action",
+      "name": "Coordinated Shuffle",
+      "system": {
+        "actionType": {
+          "value": "reaction"
+        },
+        "description": {
+          "value": "<p><strong>Trigger</strong> An adjacent ally moves away from the Corpse Fleet infantry</p><hr /><p><strong>Effect</strong> The Corpse Fleet infantry Strides up to half their Speed. They must move in the same direction as the triggering ally.</p>",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "move"
+          ]
+        },
+        "_migration": {
+          "version": 0.946,
+          "previous": {
+            "schema": null,
+            "foundry": "13.350",
+            "system": "7.6.2"
+          }
+        },
+        "actions": {
+          "value": null
+        },
+        "category": "defensive",
+        "deathNote": false
+      },
+      "effects": [],
+      "_id": "4tc8In6JzRT2PZ3N",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "HfqCvkteYnTykQsA": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "pf2e",
+        "systemVersion": "7.6.2"
+      },
+      "_key": "!actors.items!bp4ChaSm9436oH68.4tc8In6JzRT2PZ3N"
     }
   ],
   "effects": [],
