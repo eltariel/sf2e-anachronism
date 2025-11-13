@@ -23,7 +23,10 @@
         "key": "AdjustModifier",
         "mode": "multiply",
         "relabel": "{item|name}",
-        "selector": "strike-damage",
+        "selectors": [
+          "unarmed-damage",
+          "weapon-damage"
+        ],
         "slug": "weapon-specialization",
         "value": 2
       }
