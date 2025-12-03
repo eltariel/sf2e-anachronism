@@ -476,8 +476,21 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
-        "slug": null,
+        "rules": [
+          {
+            "key": "Note",
+            "outcome": [
+              "success",
+              "criticalSuccess"
+            ],
+            "text": "The creature treats all squares adjacent to the square in which it was struck as difficult terrain until the end of the creature's next turn",
+            "selector": [
+              "graviton-glaive-attack"
+            ],
+            "title": "Graviton Glaive"
+          }
+        ],
+        "slug": "graviton-glave",
         "traits": {
           "otherTags": [],
           "value": [
@@ -510,9 +523,9 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null,
-        "coreVersion": "13.350",
+        "coreVersion": "13.351",
         "systemId": "pf2e",
-        "systemVersion": "7.6.2"
+        "systemVersion": "7.7.4"
       },
       "ownership": {
         "default": 0
