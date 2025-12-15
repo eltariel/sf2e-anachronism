@@ -30,12 +30,8 @@
         "value": 1,
         "type": "item",
         "predicate": [
-          {
-            "and": [
-              "action:maneuver-in-flight",
-              "wings-deployed"
-            ]
-          }
+          "action:maneuver-in-flight",
+          "wings-deployed"
         ]
       }
     ],

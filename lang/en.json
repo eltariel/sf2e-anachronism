@@ -386,12 +386,6 @@
             "Hardlight": {
                 "TouchingProjectorLabel": "Touching Projector"
             },
-            "HellknightDegradant": {
-                "GravitonGlaive": {
-                    "Label": "Graviton Glaive",
-                    "Note": "The creature hit by the hellknight's graviton glaive treats all squares adjacent to the square in which it was struck as difficult terrain until the end of the creature's next turn."
-                }
-            },
             "Vorthuul": {
                 "QuantumDuality": {
                     "AbsoluteTranquility": "Absolute Tranquility",
