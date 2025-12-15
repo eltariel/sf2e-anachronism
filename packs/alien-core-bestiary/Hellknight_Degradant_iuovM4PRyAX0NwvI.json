@@ -477,7 +477,7 @@
           "remaster": false
         },
         "rules": [],
-        "slug": null,
+        "slug": "graviton-glaive",
         "traits": {
           "otherTags": [],
           "value": [
@@ -510,9 +510,9 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null,
-        "coreVersion": "13.350",
+        "coreVersion": "13.351",
         "systemId": "pf2e",
-        "systemVersion": "7.6.2"
+        "systemVersion": "7.7.4"
       },
       "ownership": {
         "default": 0
@@ -716,7 +716,20 @@
           "license": "OGL",
           "remaster": false
         },
-        "rules": [],
+        "rules": [
+          {
+            "key": "Note",
+            "outcome": [
+              "success",
+              "criticalSuccess"
+            ],
+            "text": "{item|description}",
+            "selector": [
+              "graviton-glaive-attack"
+            ],
+            "title": "{item|name}"
+          }
+        ],
         "slug": null,
         "traits": {
           "otherTags": [],
@@ -746,9 +759,9 @@
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null,
-        "coreVersion": "13.350",
+        "coreVersion": "13.351",
         "systemId": "pf2e",
-        "systemVersion": "7.6.2"
+        "systemVersion": "7.7.4"
       },
       "ownership": {
         "default": 0

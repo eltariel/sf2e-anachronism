@@ -8,7 +8,17 @@
       "gm": "",
       "value": "<p><strong>Ammunition</strong> projectile</p><hr /><p>Harvested from the Diaspora by Ulrikka Clanholdings, these rocks contain charged particles from the Astral Plane. When forged in a process that is part flint-knapping and part occult communion, skilled artificers can turn shards of these rocks into ammunition capable of harming incorporeal beings. Each piece of Iovan ammunition functions as though the weapon firing it had the <em>ghost killer</em> weapon upgrade. The brittle ammunition deals 0 damage against corporeal targets, as it breaks apart upon impact. Iovan ammunition deals half damage (rounded down) to an incorporeal creature possessing a living creature, making it popular with exorcists throughout the galaxy.</p>"
     },
-    "rules": [],
+    "rules": [
+      {
+        "definition": [
+          "item:id:{item|id}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": "ghost-touch"
+      }
+    ],
     "slug": "iovan-ammunition",
     "_migration": {
       "version": 0.943,
@@ -97,7 +107,7 @@
     "exportSource": null,
     "coreVersion": "13.351",
     "systemId": "pf2e",
-    "systemVersion": "7.7.3"
+    "systemVersion": "7.7.4"
   },
   "_id": "g00dmHOWZiRVk3yU",
   "sort": 0,
