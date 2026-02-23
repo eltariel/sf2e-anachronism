@@ -23,9 +23,13 @@
         "key": "AdjustDegreeOfSuccess",
         "selector": "saving-throw",
         "predicate": [
-          "item:trait:curse",
-          "item:trait:disease",
-          "item:trait:polymorph"
+          {
+            "or:" [
+              "item:trait:curse",
+              "item:trait:disease",
+              "item:trait:polymorph"
+            ]
+          }
         ],
         "adjustment": {
           "success": "one-degree-better"
